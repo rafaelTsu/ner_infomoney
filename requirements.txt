@@ -1,0 +1,7 @@
+scrapy
+transformers
+label-studio
+tensorflow
+datasets
+accelerate
+scikit-learn
