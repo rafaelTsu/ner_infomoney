@@ -3,14 +3,6 @@ from pydantic import BaseModel
 from typing import List
 from transformers import pipeline
 
-checkpoint = "script\output\checkpoint-6"
-token_classifier = pipeline(
-    "token-classification", model=checkpoint, aggregation_strategy="simple"
-)
-
-print(token_classifier("Lula e Bolsonaro."))
-
-""""
 app = FastAPI()
 
 model_path = 'script\output'
@@ -40,4 +32,3 @@ async def predict(request: PredictionRequest):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
-"""
