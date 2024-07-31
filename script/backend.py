@@ -5,8 +5,8 @@ from transformers import pipeline
 
 app = FastAPI()
 
-model_path = 'script\output'
-classifier = pipeline('text-classification', model=model_path, tokenizer=model_path)
+model_path = 'script\output\checkpoint-6'
+classifier = pipeline('token-classification', model=model_path, tokenizer=model_path)
 
 class PredictionRequest(BaseModel):
     text: List[str]
