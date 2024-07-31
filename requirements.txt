@@ -5,3 +5,5 @@ tensorflow
 datasets
 accelerate
 scikit-learn
+tf-keras
+fastapi
